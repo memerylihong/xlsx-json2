@@ -113,7 +113,7 @@ const transformJson = (data, header) => {
   });
 };
 
-const downXlsxFromJson = (data, header, filename = '未命名.xlsx', sheetname = 'Sheet') => {
+const downXlsxFromJson = (data, header, filename = '未命名.xlsx', sheetname) => {
   let formatData = transformJson(data, header);
   let ws = XLSX.utils.json_to_sheet(formatData);
   let wb = XLSX.utils.book_new();
@@ -122,7 +122,7 @@ const downXlsxFromJson = (data, header, filename = '未命名.xlsx', sheetname =
   XLSX.writeFile(wb, filename);
 };
 
-const downXlsxFromTable = (data, filename = '未命名.xlsx', sheetname = 'Sheet') => {
+const downXlsxFromTable = (data, filename = '未命名.xlsx', sheetname) => {
   /* convert state to workbook */
   let ws = XLSX.utils.table_to_sheet(data);
   let wb = XLSX.utils.book_new();

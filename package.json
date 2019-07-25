@@ -20,8 +20,6 @@
   "engines": {
     "node": ">=8"
   },
-  "author": "thomas.hairong@gmail.com",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/memerylihong/xlsx-json2/issues"
   },
