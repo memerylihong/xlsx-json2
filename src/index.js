@@ -114,6 +114,7 @@ const transformJson = (data, header) => {
 };
 
 const downXlsxFromJson = (data, header, filename = '未命名.xlsx', sheetname) => {
+  console.log('我走了吗')
   let formatData = transformJson(data, header);
   let ws = XLSX.utils.json_to_sheet(formatData);
   let wb = XLSX.utils.book_new();
