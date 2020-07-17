@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/memerylihong/xlsx-json2#readme",
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "xlsx": "^0.14.1"
   },
   "devDependencies": {
